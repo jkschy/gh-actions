@@ -4,8 +4,6 @@ jobs:
     lint:
         runs-on: ubuntu-latest
         steps:
-            - run: ls
-            - run: pip3 install -r requirements.txt
             - run: pip3 install flake8
             - run: flake8 main.py
     doctest:
