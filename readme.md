@@ -1,7 +1,7 @@
 Github Actions Declarative Configuration
 ========================================
 
-This project explores configuring a continuous integration workflow using [Github Actions](https://github.com/features/actions).
+This project explores configuring a continuous integration workflow using [Github Actions](https://github.com/features/actions). Actions are configured using declarative YAML config file. Github provides an [introduction to Actions](https://docs.github.com/en/actions/learn-github-actions/introduction-to-github-actions).
 
 Modify `.github/workflows/ci.yml` such that it runs the following jobs on each commit:
 
@@ -10,6 +10,6 @@ Modify `.github/workflows/ci.yml` such that it runs the following jobs on each c
    - For the lint task only, we need flake8 installed (`pip3 install flake8`) in addition to the modules specified in `requirements.txt`.
 2. `doctest` jobs - Run `python3 -m doctest main.py` for each of Python 3.6, 3.7, 3.8, and 3.9.
  
-Once the integration test workflows are implemented, the output of a workflow on the actions tab should look like this:
+Once the integration test workflows are implemented, the output of a workflow on the `Actions` tab should look like this:
 
 ![Output](output.png)
